@@ -10,4 +10,5 @@
 
 @section('content')
     <p>This is my body content.</p>
+    <x-alert/>
 @endsection
