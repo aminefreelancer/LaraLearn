@@ -14,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::prefix('admin')->group(function () {
+    Route::get('/user/profile', function () {
+        return 'Admin profile';
+    });
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -36,3 +42,4 @@ Route::get('/greeting', function () {
 });
 
 Route::get('/user/profile', [TestController::class, 'profile'])->name('profile');
+
