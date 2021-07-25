@@ -12,4 +12,9 @@ class TestController extends Controller
     {
         return 'hello world !';
     }
+
+    public function profile()
+    {
+        return 'this is the profile page ! ';
+    }
 }
