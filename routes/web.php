@@ -44,3 +44,6 @@ Route::get('/greeting', function () {
 Route::get('/user/profile', [TestController::class, 'profile'])->name('profile');
 
 Route::view('child', 'child');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
